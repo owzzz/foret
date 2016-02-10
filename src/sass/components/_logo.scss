@@ -1,0 +1,15 @@
+.ft-logo {
+	width: 400px;
+	height: 120px;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	text-indent: -999999px;
+	margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+	.ft-logo {
+		width: 400px;
+	    height: 180px;
+	}
+}

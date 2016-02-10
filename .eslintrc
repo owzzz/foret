@@ -1,0 +1,79 @@
+{
+    "env": {
+        "node": true,
+        "es6": true
+    },
+    "globals": {
+        "$": false,
+        "window": true,
+        "alert": true,
+        "document": true
+    },
+    "plugins": [
+    ],
+    "extends": "eslint:recommended",
+    "ecmaFeatures": {
+        "blockBindings": true,
+        "forOf": true,
+        "jsx": true,
+        "arrowFunctions": true,
+        "destructuring", true,
+        "templateStrings": true,
+        "spread": true,
+        "modules": true
+      },
+    "rules": {
+        "block-scoped-var": 2,
+        "brace-style": 2,
+        "comma-spacing": [
+            0,
+            {
+                "before": true,
+                "after": true
+            }
+        ],
+        "complexity": [
+            1,
+            4
+        ],
+        "dot-notation": 2,
+        "eol-last": 2,
+        "indent": [2,tab
+        ],
+        "max-len": [
+            1,
+            120
+        ],
+        "new-cap": 0,
+        "no-trailing-spaces": 2,
+        "no-underscore-dangle": 0,
+        "no-unused-expressions": 2,
+        "no-unused-vars": [
+            1,
+            {
+                "args": "none"
+            }
+        ],
+        "no-unused-vars": [0],
+        "no-console": [0],
+        "quotes": [
+            2,
+            "single",
+            "avoid-escape"
+        ],
+        "linebreak-style": [
+            2,
+            "unix"
+        ],
+        "semi": [
+            2,
+            "always"
+        ],
+        "space-after-keywords": 2,
+        "space-before-blocks": 2,
+        "strict": [
+            2,
+            "global"
+        ]
+    }
+}

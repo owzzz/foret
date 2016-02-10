@@ -1,0 +1,53 @@
+@import "bourbon";
+@import "normalize";
+@import "variables";
+@import "typography";
+@import "layout";
+
+/* Components
+ *****************************/
+
+ @import "components/logo";
+ @import "components/nav";
+
+.ft-wrapper {
+	position: relative;
+	background-image: url("../images/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	opacity: 0;
+
+	&:after {
+		content: attr(data-caption);
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		font-size: 12px;
+    	letter-spacing: 0.5px;
+	}
+
+	/* Flex Box
+	 *********/
+	@include align-items(center);
+	@include display(flex);
+	@include justify-content(center);
+}
+
+.ft-content {
+	width: 80%;
+	text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+	.ft-wrapper {
+		&:after {
+			bottom: 40px;
+			left: 40px;
+		}
+	}
+}

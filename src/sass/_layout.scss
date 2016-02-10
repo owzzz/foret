@@ -1,0 +1,14 @@
+.ft-sub-header {
+	width: 80vw;
+}
+
+@media screen and (min-width: 1024px) {
+	.ft-sub-header {
+		position: absolute;
+		top: 10vh;
+		left: 10vw;
+		width: 190px;
+		text-align: left;
+		font-size: 16px;
+	}
+}

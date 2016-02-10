@@ -1,0 +1,62 @@
+.ft-nav {
+	position: absolute;
+	top: -100px;
+	right: -100px;
+}
+
+.ft-nav-icon {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.ft-stroke {
+	display: none;
+}
+
+@media screen and (min-width: 1024px) {
+	.ft-nav-icon {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+        display: none;
+	}
+
+	.ft-nav {
+		position: absolute;
+    	bottom: 30vh;
+    	right: 15vw;
+        padding: 0;
+    	top: initial;
+
+    	ul {
+    		list-style-type: none;
+            padding: 0;
+    		li {
+    			position: relative;
+    			overflow: hidden;
+    			margin-bottom: 10px;
+                width: 110px;
+    			a {
+    				text-decoration: none;
+    				letter-spacing: 1px;
+    				font-size: 15px;
+    				display: block;
+
+    				@include transform(translate3d(0,0,0));
+    			}
+    		}
+    	}
+	}
+
+	.ft-stroke {
+		display: block;
+		width: 15px;
+    	height: 1px;
+    	background: #fff;
+    	position: absolute;
+    	bottom: 0;
+        opacity: 1;
+    	@include transform(translate3d(0, 3px, 0));
+	}
+}
