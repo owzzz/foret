@@ -6,8 +6,8 @@ build:
       code: export NODE_ENV="development"
     - npm-install
     - script:
-      name: Install JSPM
-      code: npm install jspm -g
+      name: Install JSPM & Gulp
+      code: npm install jspm -g && npm install -g gulp
     - script:
       name: Install JSPM packages
       code: jspm install
