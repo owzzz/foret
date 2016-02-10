@@ -13,7 +13,7 @@ build:
       code: jspm install
     - script:
       name: Compiling code
-      code: sudo gulp local
+      code: sudo gulp build
 deploy:
     steps:
       - install-packages:
