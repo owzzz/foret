@@ -5,7 +5,7 @@ build:
       name: Set Environment Variables
       code: export NODE_ENV="development"
     - npm-install
-    - npm install -g jspm
+    - npm-install -g jspm
     - jspm install
 deploy:
     steps:
