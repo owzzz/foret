@@ -1,6 +1,6 @@
-# JSPM | GULP | BABEL Boilerplate project
+# Foret Music
 
-A Gulp, JSPM and Babel boilerplate project
+A Canvas and WebGL project incorporating music and touch
 
 ## Installation
 
