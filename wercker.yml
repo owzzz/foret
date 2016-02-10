@@ -1,4 +1,5 @@
 box: nodesource/node
+no-response-timeout: 10
 build:
   steps:
     - script:
