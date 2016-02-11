@@ -3,10 +3,9 @@
 var express    = require('express'),
     http       = require('http'),
     path       = require('path'),
-    nodemailer = require('nodemailer'),
     app        = express(),
     bodyParser = require('body-parser'),
-    port       = process.env.PORT || 3000;
+    port       = process.env.PORT || 9000;
 
 
 /* EXPRESS CONFIGURATION
