@@ -11,7 +11,7 @@ build:
       code: npm install jspm -g && npm install -g gulp
     - script:
       name: Install JSPM packages
-      code: jspm install
+      code: npm install && jspm install
     - script:
       name: Compiling code
       code: sudo gulp build
